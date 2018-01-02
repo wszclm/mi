@@ -348,6 +348,33 @@
 	margin-top: 51px;
 	display: block;
 }
+.jdbtz{
+	width: 234px;
+	height: 614px;
+	float: left;
+}
+.jdb::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.jdbb{
+	width: 992px;
+	float: right;
+	position: relative;
+}
+.jdb{
+	width: 992px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+.jdbb .jdb.active{
+	opacity: 1;
+	z-index: 1;
+}
 .jdbt{
 	width: 234px;
 	height: 300px;
@@ -797,7 +824,7 @@
 	color: #757575;
 	background: #eeeeee;
 	margin-right: 6px;
-	margin-top: 15px; 
+	margin-top: 15px;
 }
 .sousuoneirong:hover{
 	background: #ff6700;
@@ -959,7 +986,177 @@
     margin-left: 10px;
     font-size: 12px;
 }
-
+.zhuyao{
+	width: 1226px;
+	height: 478px;
+	margin: 0 auto;
+}
+.zhuyao_top{
+	width: 1226px;
+	height: 58px;
+	line-height: 58px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+.zhuyao_bottom{
+	width: 1226px;
+	height: 420px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.zhuyaoa{
+	width: 296px;
+	height: 420px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-top: 45px;
+    position: relative;
+    background: #fff;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+.zhuyaoa:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.zhuyaoa h2{
+	font-size: 16px;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 18px;
+}
+.zhuyaob{
+	width: 1500px;
+	height: 340px;
+    transition: all 1s;
+}
+.zhuyaob li{
+	width: 296px;
+	height: 340px;
+    float: left;
+}
+.zhuyaob li h3{
+    margin: 0 20px 5px;
+    font-weight: 400;
+}
+.zhuyaob li h3 a{
+    display: block;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+}
+.jieshao{
+    width: 200px;
+    height: 40px;
+    margin: 0 auto 10px;
+    line-height: 20px;
+}
+.jieshao a{
+    display: block;
+    color: #b0b0b0;
+    font-size: 12px;
+    text-align: center;
+}
+.jieshao2{
+    margin: 0 10px 15px;
+    height: 21px;
+    text-align: center;
+}
+.jieshao2 a{
+    display: block;
+    color: #333;
+    font-size: 14px;
+}
+.zytu{
+    width: 216px;
+    height: 154px;
+    margin: 0 auto;
+}
+.zytu a{
+    width: 216px;
+    height: 154px;
+    display: block;
+}
+.zytu a img{
+    width: 216px;
+    height: 154px;
+}
+.zy_box{
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.zy_box1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border:2px solid #fff;
+    background: #b0b0b0;
+    z-index: 100;
+    cursor: pointer;
+}
+.zy_box1:hover{
+    background: #ff6700;
+}
+.zy_box1.active{
+    border:2px solid #ff6700;
+    background: #fff;
+}
+.zy_left{
+    width: 20px;
+    height: 48px;
+    position: absolute;
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    top: 186px;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 999;
+}
+.zhuyaoa:hover .zy_left{
+    opacity: 1;
+}
+.zy_left:hover{
+    background: rgba(0,0,0,0.5);
+}
+.zy_right{
+    width: 20px;
+    height: 48px;
+    position: absolute;
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    top: 186px;
+    right: 0;
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 999;
+}
+.zhuyaoa:hover .zy_right{
+    opacity: 1;
+}
+.zy_right:hover{
+    background: rgba(0,0,0,0.5);
+}
 .neirong{
 	width: 1226px;
 	height: 478px;
@@ -1364,7 +1561,7 @@
 	float:right;
 	line-height: 20px;
 	text-align: center;
-	margin-left: 8px; 
+	margin-left: 8px;
 	margin-top: 18px;
 }
 .shipin-topy div:first-child:hover{
@@ -1436,7 +1633,7 @@
 	height: 79px;
 	margin-left: 62px;
 	background: #ffffff;
-	border-bottom: 1px solid #e0e0e0;	
+	border-bottom: 1px solid #e0e0e0;
 }
 .dibu1tn{
 	width: 242px;
@@ -1638,7 +1835,7 @@
 	width: 75px;
 	height: 76px;
 	float: left;
-	
+
 }
 .jinxiatu:first-child{
 	margin-left: 4px;
